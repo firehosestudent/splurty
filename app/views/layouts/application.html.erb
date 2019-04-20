@@ -30,16 +30,16 @@
 
       </div>
 
-      <div class="col-4 slogan">
+      <div class="col col-sm-4 hidden-xs-down slogan">
         this is a slogan
       </div>
 
-      <div class="col-5 links">
+      <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
 
         <!-- Button trigger modal -->
 
         <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %> 
-
+        &nbsp;&nbsp;
         <%= link_to 'about', about_path %>
         
       </div>
@@ -69,8 +69,10 @@
 
 
 
-      <%= f.input :saying %>
-      <%= f.input :author %>
+      <%= f.input :saying, label: "enter your favorite quote", placeholder: "I am god" %>
+      <br />
+      
+      <%= f.input :author, label: "what is your name?", placeholder: "GOD" %>
       <br />
       
 
@@ -123,11 +125,11 @@
       <div class="container">
         <div class="row">        
 
-          <div class="col-6">
+          <div class="col-12 col-sm-6">
             <%= link_to "This isn't enough, I need more", root_path, class: "next-quote"  %>
           </div>
 
-          <div class="col-6 footer-blurb">
+          <div class="col-12 col-sm-6 footer-blurb">
             hacked by <a href="https://github.com/firehosestudent/splurty.git">Jonny P</a><br />
             this is a splurty app - <a href="https://online.bootcampspot.com">Learn how to code here</a>
             
